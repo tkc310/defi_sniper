@@ -1,7 +1,3 @@
-利用しなくなったため草を生やすためにコードを公開します。  
-以前使っていましたが現在も優位性があるかは分かりませんので、利用は自己責任でお願いします。  
-また、無償で公開しているためツールの利用方法に関する問い合わせは受け付けていません。  
-
 DeFi用のトレーディングbotです。  
 流動性追加のタイミングで素早くトークンを購入できます。  
 
@@ -9,6 +5,24 @@ DeFi用のトレーディングbotです。
 - ハニーポット対策に事前に少額での売買が可能か検証  
 - 購入上限額があるトークン対策として該当トランザクションの内容をコピーして購入 (限度額設定も可能)  
 - pancake(BSC), pangolin(AVAX)などに対応 (仕組みは大体同じため取引所などのアドレスを変えれば流用可能)  
+
+利用しなくなったため草を生やす目的でコードを公開します。  
+以前使っていましたが現在も優位性があるかは分かりませんので、利用は自己責任でお願いします。  
+また、無償で公開しているためツールの利用方法に関する問い合わせは受け付けていません。  
+
+---
+
+This is a trading bot for DeFi.  
+You can quickly buy tokens when liquidity is added.  
+
+The following functions are available↓  
+- Verify whether it is possible to buy and sell small amounts in advance for honeypot measures  
+- Copy and buy the contents of the relevant transaction for tokens with a purchase limit (limits can also be set).  
+- Support for pancake(BSC), pangolin(AVAX), etc. (The mechanism is almost the same, so it can be used by changing the address of other exchanges, etc.)  
+
+I am publishing the code for the purpose of growing grass since I no longer use it.  
+I used to use this tool, but I am not sure if it is still superior, so please use it at your own risk.  
+Also, I do not accept inquiries about how to use the tool because I am releasing it for free.  
 
 ## Environments
 
