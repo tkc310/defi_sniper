@@ -1,0 +1,14 @@
+# Router Address (DEX address)
+ADDRESS_ROUTER="0xe54ca86531e17ef3616d22ca28b0d458b6c89106"
+
+# Factory Address (create of tx for add liquidity)
+ADDRESS_FACTORY="0xefa94de7a4656d787667c749f7e1223d71e9fd88"
+
+# Liquidity Pair Token Address (WAVAX)
+ADDRESS_BASE="0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"
+
+# WebSocket RPC providor endpoint (detected fast)
+# WS_RPC_URL="wss://api.avax.network/ext/bc/C/ws"
+
+# RPC providor endpoint
+RPC_URL="https://api.avax.network/ext/bc/C/rpc"

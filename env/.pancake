@@ -1,0 +1,20 @@
+# Router Address (DEX address)
+# - Pancake v1: 0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F
+# - Pancake v2: 0x10ed43c718714eb63d5aa57b78b54704e256024e
+ADDRESS_ROUTER="0x10ed43c718714eb63d5aa57b78b54704e256024e"
+
+# Factory Address (create of tx for add liquidity)
+ADDRESS_FACTORY="0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73"
+
+# WBNB: 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c
+ADDRESS_BASE="0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+
+# WebSocket RPC providor endpoint (detected fast)
+# - BSC@getblock: wss://bsc.getblock.io/mainnet/?api_key=xxx
+# - wss://bsc-ws-node.nariox.org:443
+WS_RPC_URL="xxx"
+
+# RPC providor endpoint
+# - BSC: https://bsc-dataseed1.binance.org/ @see https://bscscan.com/apis#rpc
+# - BSC@bigblock: bsc.getblock.io/mainnet/?api_key=xxx
+RPC_URL="https://bsc-dataseed1.binance.org/"

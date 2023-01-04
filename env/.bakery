@@ -1,0 +1,19 @@
+# Router Address (DEX address)
+ADDRESS_ROUTER="0xcde540d7eafe93ac5fe6233bee57e1270d3e330f"
+
+# Factory Address (create of tx for add liquidity)
+ADDRESS_FACTORY="0x01bf7c66c6bd861915cdaae475042d3c4bae16a7"
+
+# Liquidity Pair Token Address (WBNB)
+# FIXED: BAKE, DOGGY?
+# Until it's clear, it's better to detect it with SWAP
+ADDRESS_BASE="0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+
+# WebSocket RPC providor endpoint (detected fast)
+# - BSC@getblock: wss://bsc.getblock.io/mainnet/?api_key=xxx
+WS_RPC_URL="xxx"
+
+# RPC providor endpoint
+# - BSC: https://bsc-dataseed1.binance.org/ @see https://bscscan.com/apis#rpc
+# - BSC@bigblock: bsc.getblock.io/mainnet/?api_key=051b9f92-f141-4aa7-a7f8-97368c90cad9
+RPC_URL="https://bsc-dataseed1.binance.org/"
