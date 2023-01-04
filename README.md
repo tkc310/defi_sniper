@@ -3,7 +3,7 @@ DeFi用のトレーディングbotです。
 
 下記の機能があります↓  
 - ハニーポット対策に事前に少額での売買が可能か検証  
-- 購入上限額があるトークン対策として該当トランザクションの内容をコピーして購入 (限度額設定も可能)  
+- 購入上限額があるトークン対策として直前に成功したトランザクションの内容をコピーして購入 (限度額設定も可能)  
 - pancake(BSC), pangolin(AVAX)などに対応 (仕組みは大体同じため取引所などのアドレスを変えれば流用可能)  
 - BitQueryのAPIを叩いて特定walletのトランザクションを追跡
 
@@ -18,7 +18,7 @@ You can quickly buy tokens when liquidity is added.
 
 The following functions are available↓  
 - Verify whether it is possible to buy and sell small amounts in advance for honeypot measures  
-- Copy and buy the contents of the relevant transaction for tokens with a purchase limit (limits can also be set).  
+- Purchase of tokens with a purchase limit by copying the contents of the last successful transaction (limits can also be set)  
 - Support for pancake(BSC), pangolin(AVAX), etc. (The mechanism is almost the same, so it can be used by changing the address of other exchanges, etc.)  - Track specific wallet transactions by hitting BitQuery's API  
 
 I am publishing the code for the purpose of growing grass since I no longer use it.  
