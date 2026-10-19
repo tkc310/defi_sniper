@@ -1,0 +1,12 @@
+# サプライチェーン攻撃対策の設定 (詳細は README の「セキュリティ」節)
+[install]
+# bun.lock と package.json の不一致を許さない (勝手にバージョンが動かない)
+frozenLockfile = true
+
+# 公開から 7 日経っていないバージョンはインストールしない。
+# 乗っ取られたメンテナアカウントから公開された悪性バージョンは
+# 多くが数時間〜数日で検知・削除されるため、その期間を避ける。
+minimumReleaseAge = 604800 # seconds (7 days)
+
+# `bun add` 時に ^ を付けず完全固定で package.json に書き込む
+exact = true
