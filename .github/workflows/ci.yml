@@ -14,7 +14,7 @@ jobs:
     steps:
       # サードパーティ Action もサプライチェーンの一部なので、タグではなくコミット SHA で固定することを推奨
       # (Dependabot / Renovate で SHA の更新 PR を受け取れる)
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       - uses: oven-sh/setup-bun@v2
