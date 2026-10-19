@@ -17,7 +17,8 @@ jobs:
       - run: bun --version
       - name: install
         run: |
-          bun install --no-frozen-lockfile 2>&1 | tee install.txt || true
+          sed -i '/frozenLockfile/d' bunfig.toml
+          bun install 2>&1 | tee install.txt || true
           echo "::warning title=install::$(sed ':a;N;$!ba;s/\n/%0A/g' install.txt)"
           echo "::warning title=lock::$(base64 -w0 bun.lock)"
       - name: audit
