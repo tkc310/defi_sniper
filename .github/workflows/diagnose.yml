@@ -15,21 +15,7 @@ jobs:
         with:
           bun-version: latest
       - run: bun --version
-      - name: install
+      - name: info
         run: |
-          sed -i '/frozenLockfile/d' bunfig.toml
-          bun install 2>&1 | tee install.txt || true
-          echo "::warning title=install::$(sed ':a;N;$!ba;s/\n/%0A/g' install.txt)"
-          echo "::warning title=lock::$(base64 -w0 bun.lock)"
-      - name: audit
-        run: |
-          bun audit 2>&1 | tee audit.txt || true
-          echo "::warning title=audit::$(sed ':a;N;$!ba;s/\n/%0A/g' audit.txt)"
-      - name: typecheck
-        run: |
-          bun run typecheck 2>&1 | tee tc.txt || true
-          echo "::warning title=typecheck::$(sed ':a;N;$!ba;s/\n/%0A/g' tc.txt | head -c 30000)"
-      - name: build
-        run: |
-          bun build src/commands/**/*.ts --target=bun --outdir=/tmp/out 2>&1 | tail -30 | tee b.txt || true
-          echo "::warning title=build::$(sed ':a;N;$!ba;s/\n/%0A/g' b.txt)"
+          { bun info ethers@6.17.0 dependencies; bun info ethers time --json | tail -12; bun info ws time --json | tail -8; bun info ws dist-tags; } 2>&1 | tee info.txt || true
+          echo "::warning title=info::$(sed ':a;N;$!ba;s/\n/%0A/g' info.txt)"
