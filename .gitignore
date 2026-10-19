@@ -1,2 +1,12 @@
 node_modules
 .history
+.DS_Store
+
+# secrets
+.env
+.env.*
+!.env.example
+env/*.local.env
+
+# survey outputs (contains wallet addresses)
+data/survey/outputs/

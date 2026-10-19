@@ -1,22 +1,36 @@
 {
-  "name": "348-pancakeswap-trading-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "directories": {
-    "test": "test"
+  "name": "defi-sniper",
+  "version": "2.0.0",
+  "description": "Uniswap V2 系 DEX 向けのスナイピング／手動売買 bot (Bun + TypeScript)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "bun": ">=1.3.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "snipe:pair-created": "bun src/commands/snipe/pair-created.ts",
+    "snipe:mint": "bun src/commands/snipe/mint.ts",
+    "snipe:swap-trace": "bun src/commands/snipe/swap-trace.ts",
+    "buy": "bun src/commands/manual/buy.ts",
+    "buy:multiple": "bun src/commands/manual/buy-multiple.ts",
+    "sell": "bun src/commands/manual/sell.ts",
+    "approve:buy": "bun src/commands/manual/approve.ts buy",
+    "approve:sell": "bun src/commands/manual/approve.ts sell",
+    "subscribe:pair-created": "bun src/commands/subscribe/pair-created.ts",
+    "subscribe:mint": "bun src/commands/subscribe/mint.ts",
+    "subscribe:swap": "bun src/commands/subscribe/swap.ts",
+    "survey:tx": "bun src/commands/survey/tx.ts",
+    "survey:wallet-tx": "bun src/commands/survey/wallet-tx.ts",
+    "survey:find-wallets": "bun src/commands/survey/find-wallets.ts",
+    "typecheck": "tsc --noEmit",
+    "deps:check": "bun audit && bun outdated"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@pancakeswap-libs/sdk": "^1.0.1",
-    "dotenv": "^10.0.0",
-    "ethers": "^5.2.0",
-    "node-fetch": "^2.6.1",
-    "web3": "^1.3.6"
-  }
+    "ethers": "6.15.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.0",
+    "typescript": "5.9.3"
+  },
+  "trustedDependencies": []
 }
